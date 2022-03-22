@@ -1,0 +1,11 @@
+.rating {
+  margin: 0;
+
+  &__star {
+    margin-right: 0.25rem;
+
+    &--template {
+      display: none;
+    }
+  }
+}
