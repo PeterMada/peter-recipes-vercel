@@ -4,6 +4,36 @@ import { RecipeSmall } from '../../components/recipe/RecipeSmall';
 import styles from './Main.module.css';
 
 export const Main = () => {
+  const recipes = [
+    {
+      rating: 2,
+      outOf: 5,
+      linkToDetail: 'recipe/sushi',
+      recipeTitle: 'Sushi',
+      recipeSmallText:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      recipeAuthor: 'Chef Mike',
+    },
+    {
+      rating: 3,
+      outOf: 5,
+      linkToDetail: 'recipe/noodles',
+      recipeTitle: 'Noodles',
+      recipeSmallText:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      recipeAuthor: 'Chef John',
+    },
+    {
+      rating: 4,
+      outOf: 5,
+      linkToDetail: 'recipe/baked-chicken',
+      recipeTitle: 'Baked Chicken and Sausage Gumbo',
+      recipeSmallText:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      recipeAuthor: 'Chef Mala',
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -30,9 +60,10 @@ export const Main = () => {
         </svg>
 
         <div className={styles.recipesWrap}>
-          <RecipeSmall rating={2} outOf={5} />
-          <RecipeSmall rating={3} outOf={5} />
-          <RecipeSmall rating={5} outOf={5} />
+          {recipes.map((recipe) => (
+            <RecipeSmall recipe={recipe} />
+          ))}
+          ;
         </div>
       </div>
     </>

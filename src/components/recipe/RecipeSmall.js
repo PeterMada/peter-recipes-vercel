@@ -5,7 +5,7 @@ import Link from 'next/link';
 import burger from '../../assets/images/burger.jpg';
 import styles from './RecipeSmall.module.css';
 
-export const RecipeSmall = ({ rating, outOf }) => {
+export const RecipeSmall = ({ recipe }) => {
   return (
     <div className={styles.recipeSmall}>
       <div className={styles.imgWrap}>
@@ -13,14 +13,12 @@ export const RecipeSmall = ({ rating, outOf }) => {
       </div>
       <div className={styles.text}>
         <h2 className={styles.textHeading}>
-          <Link href='/'>Baked Chicken and Sausage Gumbo</Link>
+          <Link href={recipe.linkToDetail}>{recipe.recipeTitle}</Link>
         </h2>
-        <p className={styles.textParagraph}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <Rating rating={rating} outOf={outOf} />
+        <p className={styles.textParagraph}>{recipe.recipeSmallText}</p>
+        <Rating rating={recipe.rating} outOf={recipe.outOf} />
         <p className={styles.textAuthor}>
-          By: <Link href='/'>Chef John</Link>
+          By: <Link href='/'>{recipe.recipeAuthor}</Link>
         </p>
       </div>
     </div>
