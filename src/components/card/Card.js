@@ -3,8 +3,6 @@ import Image from 'next/image';
 import sushi from '../../assets/images/sushi.jpg';
 import styles from './Card.module.css';
 
-// import './style.scss';
-
 export const Card = () => {
   return (
     <div className={styles.card}>
