@@ -1,0 +1,10 @@
+.recipesWrap {
+  display: flex;
+  flex-direction: row;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.recipesWrap > div {
+  margin: 1rem;
+}

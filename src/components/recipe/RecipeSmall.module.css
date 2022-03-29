@@ -1,0 +1,26 @@
+.recipeSmall {
+  border: 1px solid #e9e9e9;
+  margin: 1rem 0;
+}
+.recipeSmall .imgWrap {
+  max-height: 20rem;
+  overflow: hidden;
+}
+.recipeSmall .imgWrapImg {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.recipeSmall .text {
+  padding: 1em 1rem;
+}
+.recipeSmall .textHeading {
+  margin: 0 0 1em 0;
+}
+.recipeSmall .textParagraph {
+  margin: 0 0 1em 0;
+}
+.recipeSmall .textAuthor {
+  margin: 0.5em 0 0 0;
+}

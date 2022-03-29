@@ -1,0 +1,19 @@
+@import '../../assets/styles/variables.scss';
+
+.header {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+  @media only screen and (min-width: $md) {
+    text-align: left;
+  }
+}
+
+.logo {
+  display: block;
+
+  &--img {
+    max-width: 120px;
+  }
+}

@@ -1,0 +1,46 @@
+.card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+}
+
+.card > span {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 10 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.card > span img {
+  object-fit: cover !important;
+}
+
+.cardText {
+  margin: 13em 1rem 2em 1rem;
+  position: relative;
+  z-index: 20;
+  color: white;
+}
+
+.cardTextHeader {
+  margin: 0;
+}
+
+.cardTextParagraph {
+  margin: 1em 0 0 0;
+}

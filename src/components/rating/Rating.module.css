@@ -1,0 +1,10 @@
+.rating {
+  margin: 0;
+}
+.ratingStar {
+  margin-right: 0.25rem;
+}
+
+.ratingtemplate {
+  display: none;
+}
