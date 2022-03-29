@@ -8,7 +8,7 @@ export const Main = () => {
     {
       rating: 2,
       outOf: 5,
-      linkToDetail: 'recipe/sushi',
+      linkToDetail: '/recipe/sushi',
       recipeTitle: 'Sushi',
       recipeSmallText:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -17,7 +17,7 @@ export const Main = () => {
     {
       rating: 3,
       outOf: 5,
-      linkToDetail: 'recipe/noodles',
+      linkToDetail: '/recipe/noodles',
       recipeTitle: 'Noodles',
       recipeSmallText:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -26,7 +26,7 @@ export const Main = () => {
     {
       rating: 4,
       outOf: 5,
-      linkToDetail: 'recipe/baked-chicken',
+      linkToDetail: '/recipe/baked-chicken',
       recipeTitle: 'Baked Chicken and Sausage Gumbo',
       recipeSmallText:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -61,7 +61,7 @@ export const Main = () => {
 
         <div className={styles.recipesWrap}>
           {recipes.map((recipe) => (
-            <RecipeSmall recipe={recipe} />
+            <RecipeSmall key={recipe.recipeTitle} recipe={recipe} />
           ))}
           ;
         </div>
