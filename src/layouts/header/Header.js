@@ -2,14 +2,15 @@ import React from 'react';
 import logo from '../../assets/images/peter-recipes-logo.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
+import styles from './Header.module.css';
 // import './styles.scss';
 
 export const Header = () => {
   return (
-    <header className='header'>
-      <Link href='/' className='logo' passHref>
+    <header className={styles.header}>
+      <Link href='/' className={styles.logo} passHref>
         <Image
-          className='logo--img'
+          className={styles.logoImg}
           src={logo}
           alt='Peter Recipes homepage'
         />
