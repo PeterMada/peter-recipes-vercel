@@ -1,19 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
 import sushi from '../../assets/images/sushi.jpg';
+import styles from './Card.module.css';
 
 // import './style.scss';
 
 export const Card = () => {
   return (
-    <div className='card'>
-      <Image src={sushi} alt='sushi' className='card__img' />
-      <div className='card__text'>
-        <h1 className='card__text--header'>
+    <div className={styles.card}>
+      <Image src={sushi} alt='sushi' className={styles.cardImg} />
+      <div className={styles.cardText}>
+        <h1 className={styles.cardTextHeader}>
           Salmon sushi <br />
           Matcha
         </h1>
-        <p className='card__text--paragraph'>12 ingredients | 40 min</p>
+        <p className={styles.cardTextParagraph}>12 ingredients | 40 min</p>
       </div>
     </div>
   );
