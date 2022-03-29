@@ -29,9 +29,11 @@ export const Main = () => {
           </defs>
         </svg>
 
-        <RecipeSmall rating={2} outOf={5} />
-        <RecipeSmall rating={3} outOf={5} />
-        <RecipeSmall rating={5} outOf={5} />
+        <div>
+          <RecipeSmall rating={2} outOf={5} />
+          <RecipeSmall rating={3} outOf={5} />
+          <RecipeSmall rating={5} outOf={5} />
+        </div>
       </div>
     </>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Star } from './Star';
-//import './rating.scss';
+import styles from './Rating.module.css';
 
 export const Rating = ({ rating, outOf }) => {
   const fullStar = parseInt(rating);
@@ -8,7 +8,7 @@ export const Rating = ({ rating, outOf }) => {
 
   return (
     <p
-      className='rating'
+      className={styles.rating}
       aria-label={`Rating is ${rating} out of ${outOf}`}>
       {Array(parseInt(outOf))
         .fill(0)

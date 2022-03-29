@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Rating.module.css';
 
 export const Star = ({ starOpacity }) => {
   let starFill = 'url(#half)';
@@ -12,7 +13,7 @@ export const Star = ({ starOpacity }) => {
   return (
     <>
       <svg
-        className='rating__star'
+        className={styles.ratingStar}
         width='16'
         height='16'
         viewBox='0 0 16 16'>
