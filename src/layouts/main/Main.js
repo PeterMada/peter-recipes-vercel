@@ -1,7 +1,7 @@
 import { Card } from '../../components/card/Card';
 import { Header } from '../header/Header';
 import { RecipeSmall } from '../../components/recipe/RecipeSmall';
-// import './styles.scss';
+import styles from './Main.module.css';
 
 export const Main = () => {
   return (
@@ -29,7 +29,7 @@ export const Main = () => {
           </defs>
         </svg>
 
-        <div>
+        <div className={styles.recipesWrap}>
           <RecipeSmall rating={2} outOf={5} />
           <RecipeSmall rating={3} outOf={5} />
           <RecipeSmall rating={5} outOf={5} />
