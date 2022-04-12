@@ -1,20 +1,13 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
-import { Main } from '../src/layouts/main/Main';
+import { Main } from "../src/layouts/main/Main";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Peter Recipes</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-
       <Main />
-
-      <footer className={styles.footer}></footer>
     </div>
   );
 }
