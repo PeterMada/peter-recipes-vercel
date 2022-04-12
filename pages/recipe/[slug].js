@@ -3,7 +3,6 @@ import { Header } from '../../src/layouts/header/Header';
 
 const Recipe = () => {
   const router = useRouter();
-  const { pid } = router.query;
 
   return (
     <div>
@@ -11,7 +10,7 @@ const Recipe = () => {
         <title>Peter Recipes</title>
         <link rel='icon' href='/favicon.ico' />
       </Header>
-      <p>Recipe detail: {pid}</p>
+      <p>Recipe detail</p>
 
       <footer>Footer</footer>
     </div>

@@ -58,13 +58,6 @@ export const Main = () => {
             </symbol>
           </defs>
         </svg>
-
-        <div className={styles.recipesWrap}>
-          {recipes.map((recipe) => (
-            <RecipeSmall key={recipe.recipeTitle} recipe={recipe} />
-          ))}
-          ;
-        </div>
       </div>
     </>
   );

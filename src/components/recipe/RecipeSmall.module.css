@@ -3,8 +3,9 @@
   margin: 1rem 0;
 }
 .recipeSmall .imgWrap {
-  max-height: 20rem;
+  height: 10rem;
   overflow: hidden;
+  position: relative;
 }
 .recipeSmall .imgWrapImg {
   object-fit: cover;
