@@ -6,7 +6,6 @@ import { Main } from '../src/layouts/main/Main';
 import { RecipeSmall } from '../src/components/recipe/RecipeSmall';
 
 function Home({ recipes }) {
-  console.log(recipes.results);
   return (
     <div className={styles.container}>
       <Head>
